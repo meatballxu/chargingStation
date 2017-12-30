@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>充电桩</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!--<link rel="shortcut icon" href="/favicon.ico">-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../js/sui/sm.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/charging.css">
+
+	</head>
+
+	<body>
+		<div class="panel-overlay panel-overlay-black"></div>
+		<!-- right Panel with Reveal effect -->
+		<div class="panel panel-right panel-cover theme-white panel-small" id='panel_location'>
+		    <div class="list-block mt0">
+				<ul>
+					<li class="item-content active">
+						<div class="item-inner close-panel">
+							长沙市
+						</div>
+					</li>
+					<li class="item-content">
+						<div class="item-inner close-panel">
+							株洲市
+						</div>
+					</li>
+					<li class="item-content">
+						<div class="item-inner close-panel">
+							湘潭市
+						</div>
+					</li>
+					<li class="item-content">
+						<div class="item-inner close-panel">
+							xxx市
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-group">
+			<!-- 你的html代码 -->
+			<div class="page">
+				<div class="content overflow-hidden">
+					<div class="icon-float">
+						<a id="icon_location" href="javascript:"><i class="iconfont icon-location"></i></a>
+						<a id="icon_search" class="external" href="search.html"><i class="iconfont icon-chaxun"></i></a>
+					</div>
+					<!--充电桩地图容器-->
+					<div class="map-box">
+						<a onclick="showMapDetail()" class="button" style="margin: 5rem;display: inline-block;" href="#">点击显示详情</a>
+					</div>
+					<!--充电桩地图点详细信息-->
+					<div class="map-detail bg-white ma2 hide">
+						<div class="list-block">
+							<ul>
+								<li class="item-content">
+									<div class="item-inner">
+										<div class="row ml0 W100pc ptb50">
+									      <div class="col-80">
+									      	<h1>湖南省人社厅</h1>
+									      </div>
+									      <div class="col-20">
+									      	<p class="h1 text-right">3.6km</p>
+									      </div>
+									      <div class="col-80 mt20 ">
+									      	<p class="tInfo">详细地址详细地址详细地址</p>
+									      </div>
+									      <div class="col-20 mt20 text-right">
+									      	<a class="badge" href="javascript:">到这去</a>
+									      </div>
+										</div>
+									</div>
+								</li>
+								<li class="item-content">
+									<div class="item-inner">
+										<div class="row ml0 W100pc ptb10">
+									      <div class="col-30">
+									      	<b class="text bgMain">¥</b><span>1.8元/度</span>
+									      </div>
+									      <div class="col-30">
+									      	<b class="text bgBlue">限</b><span>对外开放</span>
+									      </div>
+									      <div class="col-30">
+									      	<b class="text bgRed">折</b><span>无优惠</span>
+									      </div>
+										</div>
+									</div>
+								</li>
+								<li class="item-content item-link link-to-detail">
+									<div class="item-inner">
+										<div class="item-title tMain">空闲电桩：交流（6/6）直流（3/4）</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<script type='text/javascript' src='../js/sui/zepto.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/sui/sm.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/common.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/charging.js' charset='utf-8'></script>
+		
+	</body>
+
+</html>

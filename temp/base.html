@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>充电桩</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!--<link rel="shortcut icon" href="/favicon.ico">-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../js/sui/sm.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/user.css">
+		<style>
+			.card-content-inner p {
+				display: inline-block;
+				min-width: 45%;
+				margin-bottom: 0.5rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="page-group">
+			<!-- 你的html代码 -->
+			<div class="page">
+				<div class="content">
+				  <div class="card">
+				    <div class="card-header">toast</div>
+				    <div class="card-content">
+				      <div class="card-content-inner">
+				      	<p><a href="javascript:$.toast('操作失败')">简单吐司</a></p>
+				      	<p><a href="javascript:loading()">加载中:loading()</a></p>
+				      	<p><a href="javascript:loadingDone()">加载完成:loadingDone()</a></p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header">modal动态：(传入标题及内容)</div>
+				    <div class="card-content">
+				      <div class="card-content-inner">
+					      <p><a href="#" class="alert-text-title">标题+文本弹窗</a></p>
+					      <p><a href="#" class="alert-text-title-callback">标题+文本弹窗+ Callback</a></p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header">modal静态：(动态modal传入参数过于简单，定制取代，代码必须写好在页面中)</div>
+				    <div class="card-content">
+				      <div class="card-content-inner">
+					      <p><a href="#" class="tel-binding">未绑定手机号</a></p>
+					      <p><a href="#" class="charge-done">结束充电弹窗</a></p>
+					      <p><a href="#" class="charge-restart">充电失败弹窗</a></p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			
+			<!-- 弹窗 -->
+			<div class="panel-overlay panel-overlay-black"></div>
+			<!-- 未绑定手机号 -->
+			
+			<div id="telbindingModal" class="modal-spec">
+				<div class="modal-inner">
+					<div class="modal-title">您还未绑定账号</div>
+					<div class="modal-text">
+						请绑定账号后再充电
+					</div>
+				</div>
+				<div class="modal-buttons"><span class="modal-button modal-button-bold modalspec-close">立即绑定</span></div>
+			</div>
+			
+			<!-- 结束充电 -->
+			<div id="chargingModal_done" class="modal-spec">
+				<div class="modal-inner">
+					<div class="modal-title">充电完成</div>
+					<div class="modal-text">
+						<p class="tRed">本次充电扣费：<span class="pl20">80.00元</span></p>
+						<p>当前账户余额：<span class="pl20">5.00元</span></p>
+						<p>充电时长：<span>1小时20分钟20秒</span></p>
+					</div>
+				</div>
+				<div class="modal-buttons"><span class="modal-button modal-button-bold modalspec-close">确定</span></div>
+			</div>
+
+			<!-- 充电失败 -->
+			<div id="chargingModal_fail" class="modal-spec">
+				<div class="modal-inner">
+					<div class="modal-title">您的充电连接已断</div>
+					<div class="modal-text">
+						<p>可能是充电桩连接出了故障，请重新连接机器，或选择新的充电桩重走充电流程再继续充电</p>
+					</div>
+				</div>
+				<div class="modal-buttons ">
+					<span class="modal-button modal-button-bold modal-button-green modalspec-close">另选充电桩</span>
+					<span class="modal-button modal-button-bold modal-button-red modalspec-close">重新连接</span>
+				</div>
+			</div>
+		</div>
+		<script type='text/javascript' src='../js/sui/zepto.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/sui/sm.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/common.js' charset='utf-8'></script>
+		<script>
+			activeNav(0);//加载并激活底部菜单 0：充电桩 1：扫一扫 2：个人中心
+		   
+		   
+		   /***** Modal用法 (动态：传入标题及内容)*******/
+		    $(document).on('click','.alert-text-title', function () {
+		        $.alert('您可以在个人中心-充电记录中查看实际充电情况', '正常充电中');
+		    });
+		
+		    $(document).on('click', '.alert-text-title-callback',function () {
+		        $.alert('请绑定账号后再充电', '您还未绑定账号', function () {
+		            $.alert('按了确定')
+		        });
+		    });
+		   /***** Modal用法 (动态：传入标题及内容) end*******/
+		  
+		  
+		   /***** modal静态：(定制的，已写好在页面中) *******/
+			$(".tel-binding").click(function(){
+				openModalSpec($("#telbindingModal"));
+			});
+			$(".charge-done").click(function(){
+				openModalSpec($("#chargingModal_done"));
+			});
+			$(".charge-restart").click(function(){
+				openModalSpec($("#chargingModal_fail"));
+			});
+			$(".modalspec-close,.panel-overlay-black").click(closeModalSpec);
+		  
+		   /***** modal静态：(定制的，已写好在页面中) end*******/
+		  
+		
+		</script>
+	</body>
+</html>

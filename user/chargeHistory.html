@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>个人中心</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!--<link rel="shortcut icon" href="/favicon.ico">-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../js/sui/sm.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/user.css">
+
+	</head>
+
+	<body class="charHis-page">
+		<div class="page-group">
+			<!-- 你的html代码 -->
+			<div class="page">
+				<div class="content">
+					<!-- 一条记录 -->
+					<div class="record">
+						<dl>
+							<dt>
+					  		<span class="h1">湖南省人社厅-HNCDZ001</span>
+					  		<em class="badge bgGreen">充电中</em>
+					  	</dt>
+							<dd>
+								<p>单价：<span>1.8元/度</span></p>
+								<p>电桩类型：<span>交流7KW</span></p>
+								<p>充电方式：<span>按电量</span></p>
+								<p>充电电量：<span>20度</span></p>
+								<p>充电时间：<span>2017.10.12 19:29:01</span> 至 <span>~</span></p>
+							</dd>
+						</dl>
+						<a class="button charge-done" href="javascript:">结束充电</a>
+					</div>
+					<!-- 一条记录 -->
+
+					<div class="record">
+						<dl>
+							<dt>
+					  		<span class="h1">湖南省人社厅-HNCDZ001</span>
+					  		<em class="badge bgRed">充电失败</em>
+					  	</dt>
+							<dd>
+								<p>单价：<span>1.8元/度</span></p>
+								<p>电桩类型：<span>交流7KW</span></p>
+								<p>充电方式：<span>按电量</span></p>
+								<p>充电电量：<span>20度</span></p>
+								<p class="tRed">本次充电扣费：<span>80元</span></p>
+
+								<p>充电时间：<span>2017.10.12 19:29:01</span> 至 <span>~</span></p>
+							</dd>
+						</dl>
+						<a class="button charge-restart button-green" href="javascript:">重新连接</a>
+					</div>
+					<div class="record">
+						<dl>
+							<dt>
+					  		<span class="h1">湖南省人社厅-HNCDZ001</span>
+					  		<em class="badge bgMain">充电完成</em>
+					  	</dt>
+							<dd>
+								<p>单价：<span>1.8元/度</span></p>
+								<p>电桩类型：<span>交流7KW</span></p>
+								<p>充电方式：<span>按电量</span></p>
+								<p>充电电量：<span>20度</span></p>
+								<p class="tRed">本次充电扣费：<span>80元</span></p>
+								<p>充电时间：<span>2017.10.12 19:29:01</span> 至 <span>2017.10.12 19:29:01  </span></p>
+							</dd>
+						</dl>
+					</div>
+					<div class="record">
+						<dl>
+							<dt>
+					  		<span class="h1">湖南省人社厅-HNCDZ001</span>
+					  		<em class="badge bgMain">充电完成</em>
+					  	</dt>
+							<dd>
+								<p>单价：<span>1.8元/度</span></p>
+								<p>电桩类型：<span>交流7KW</span></p>
+								<p>充电方式：<span>按电量</span></p>
+								<p>充电电量：<span>20度</span></p>
+								<p class="tRed">本次充电扣费：<span>80元</span></p>
+								<p>充电时间：<span>2017.10.12 19:29:01</span> 至 <span>2017.10.12 19:29:01  </span></p>
+							</dd>
+						</dl>
+					</div>
+					<div class="record">
+						<dl>
+							<dt>
+					  		<span class="h1">湖南省人社厅-HNCDZ001</span>
+					  		<em class="badge bgMain">充电完成</em>
+					  	</dt>
+							<dd>
+								<p>单价：<span>1.8元/度</span></p>
+								<p>电桩类型：<span>交流7KW</span></p>
+								<p>充电方式：<span>按电量</span></p>
+								<p>充电电量：<span>20度</span></p>
+								<p class="tRed">本次充电扣费：<span>80元</span></p>
+								<p>充电时间：<span>2017.10.12 19:29:01</span> 至 <span>2017.10.12 19:29:01  </span></p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- 弹窗 -->
+			<div class="panel-overlay panel-overlay-black"></div>
+			
+			<!-- 结束充电 -->
+			<div id="chargingModal_done" class="modal-spec">
+				<div class="modal-inner">
+					<div class="modal-title">充电完成</div>
+					<div class="modal-text">
+						<p class="tRed">本次充电扣费：<span class="pl20">80.00元</span></p>
+						<p>当前账户余额：<span class="pl20">5.00元</span></p>
+						<p>充电时长：<span>1小时20分钟20秒</span></p>
+					</div>
+				</div>
+				<div class="modal-buttons"><span class="modal-button modal-button-bold modalspec-close">确定</span></div>
+			</div>
+
+			<!-- 充电失败 -->
+			<div id="chargingModal_fail" class="modal-spec">
+				<div class="modal-inner">
+					<div class="modal-title">您的充电连接已断</div>
+					<div class="modal-text">
+						<p>可能是充电桩连接出了故障，请重新连接机器，或选择新的充电桩重走充电流程再继续充电</p>
+					</div>
+				</div>
+				<div class="modal-buttons ">
+					<span class="modal-button modal-button-bold modal-button-green modalspec-close">另选充电桩</span>
+					<span class="modal-button modal-button-bold modal-button-red modalspec-close">重新连接</span>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='../js/sui/zepto.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/sui/sm.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/common.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/user.js' charset='utf-8'></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,22 @@
+.badge-box {
+    padding-top: 0.65rem;
+    padding-bottom: 0.7rem;
+    width: 100%;
+    margin-left: -1.5%;
+    font-size: 0;
+}
+.badge-box .badge {
+	display: inline-block;
+	width: 21.6%;
+ 	margin: 0 1.5% 0.5rem; 
+ 	font-size: 0.65rem;
+ 	color: #4D4D4D;
+ 	background: #FFFFFF;
+ 	border:1px solid #EBEBEB;
+ 	text-align: center;
+ 	font-weight: 200;
+}
+.badge-box .badge:active {
+ 	border:1px solid #E97E06;
+ 	color: #E97E06;
+}

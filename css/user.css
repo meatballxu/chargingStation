@@ -1,0 +1,144 @@
+.account-page .item-title {
+	width: 5.8rem;
+}
+.account-page .item-code {
+	position: absolute;
+	width: 4rem;
+	right: 0.75rem;
+	top: 0.4rem;
+	text-align: center;
+}
+.account-page .item-code a {
+	display: inline-block;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	width: 4rem;
+	overflow: hidden;
+}
+.account-page .item-code img {
+	width: 100%;
+	height: 100%;
+}
+.sendCode.disable,
+.sendCode.disable:active {
+    color: #C2C2C2!important;
+}
+/**个人中心**/
+.user-page .header-box {
+	padding-top: 1.2rem;
+	padding-bottom: 0.8rem;
+}
+.user-page .header-box >div {
+	position: relative;
+}
+.user-page .header {
+	position: absolute;
+	left: 0.5rem;
+	top: -0.65rem;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 100%;
+	overflow: hidden;
+}
+.user-page .header img {
+	width: 100%;
+	height: 100%;
+}
+.user-page .header-box h1,
+.user-page .header-box small {
+	padding-left: 4.6rem;
+}
+.user-page .header-box h1 {
+	color: #404040;
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+.user-page .header-box small {
+	padding-top: 0.4rem;
+	display: block;
+}
+.user-page .item-media+ .item-inner {
+	margin-left: 0.5rem;
+}
+.user-page .item-media{
+	height: 2.2rem;
+	line-height: 2.3rem;
+}
+.user-header {
+	font-weight: 300;
+}
+.user-header>ul+ul {
+	color: #404040;
+}
+/**提交意见**/
+.suggestion-page .content-block.bg-white {
+	padding: 0;
+}
+.suggestion-page textarea {
+	width: 100%;
+	padding: 0.75rem;
+	resize: none;
+	height: 10rem;
+}
+.us-page .content-block.bg-white {
+	padding: 0.75rem;
+	min-height: 10rem;
+}
+.recharHis-page .header {
+	height: 2.1rem;
+	font-size: 0.65rem;
+	line-height: 2rem;
+}
+.recharHis-page .body .row {
+	padding-top: 0.45rem;
+	padding-bottom: 0.4rem;
+	font-size: 0.6rem;
+	line-height: 1.8;
+}
+.recharHis-page .header .col-25,
+.recharHis-page .body .col-25{
+	text-align: center;
+}
+.recharHis-page .row .col-25 {
+    width: 23%;
+    margin-left: 2%;
+}
+.recharHis-page .row {
+    margin-left:0.25rem;
+    margin-right: 0.5rem;
+}
+/**充电记录**/
+.charHis-page .record {
+	background: #FFFFFF;
+	padding: 0.75rem;
+	margin-top: 0.5rem;
+}
+.charHis-page .record dt {
+	padding: 0.4rem 0;
+	font-size: 0;
+}
+.charHis-page .record dt .h1,
+.charHis-page .record dt em {
+	display: inline-block;
+	vertical-align: middle;
+}
+.charHis-page .record dt .h1 {
+	width: calc(100% - 4rem);
+	font-weight: 400;
+}
+.charHis-page .record dt em {
+	text-align: center;
+	font-size: 0.6rem;
+	float: right;
+}
+.charHis-page .record dd {
+	padding: 0 0 0.5rem ;
+	font-size: 0;
+}
+.charHis-page .record dd p {
+	display: inline-block;
+	font-size: 0.6rem;
+	line-height: 2.2;
+	color: #7C7C7C;
+	min-width: 45%;
+}
