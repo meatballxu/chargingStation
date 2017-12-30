@@ -24,10 +24,10 @@
 				  <div class="list-block mb0">
 				    <ul>
 				      <li class="item-content">
-				        <div class="item-inner">
+				        <div class="item-inner input-error"><!-- 输入错误时item-inner添加class：input-error -->
 				          <div class="item-title">手机号</div>
 				          <div class="item-input">
-				          	<input maxlength="11" type="text" placeholder="请输入手机号">
+				          	<input maxlength="11" type="text" value="2321" placeholder="请输入手机号">
 				          </div>
 				        </div>
 				      </li>
@@ -56,7 +56,7 @@
 				    </ul>
 				  </div>
 				  <div class="content-block btn-box mt50">
-				    <p><a href="#" class="button">立即绑定</a></p>
+				    <p><a href="javascript:$.toast('电话号码输入错误')" class="button">立即绑定</a></p>
 				    <p class="mt20 text-center">更换已绑定手机>></p>
 				  </div>
 				  <div class="content-block btn-box mt50">

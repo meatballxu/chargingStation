@@ -258,7 +258,7 @@ b[class^="text"] {
 .badge-white {
 	color: #4D4D4D;
 	border-radius: 0.1rem;
-	background-color: #FFFFFF;
+	background: #FFFFFF;
 }
 /**底部菜单**/
 
@@ -380,6 +380,11 @@ b[class^="text"] {
 .item-after input[type="time"],
 .item-after input[type="number"] {
 	text-align: right!important;
+}
+
+.input-error .item-title,
+.input-error .item-input input {
+	color: #EA4B36!important;
 }
 .close-picker,
 .close-picker:active {
