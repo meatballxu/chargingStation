@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-	activeNav(0); //加载并激活底部菜单 0：充电桩 1：扫一扫 2：个人中心
+	//activeNav(0); //加载并激活底部菜单 0：充电桩 1：扫一扫 2：个人中心
 	
 	//链接至充电桩详情页
 	$(document).on("click",".link-to-detail",function(){
@@ -39,8 +39,14 @@ $(document).ready(function(){
 		});
 		
 	}
+	/**电站详情页**/
 	if($("body").hasClass("station-detail")) {
-		$("li.banner").height($(window).width()*0.6);
+		$("#stationImgs,#stationImgs img").height($(window).width()*0.6);
+		$("#stationImgs img").width($(window).width());
+		$(".swiper-container").swiper({
+			autoplay : 3000,
+			autoplayDisableOnInteraction : false,
+		});
 	}
 });
 

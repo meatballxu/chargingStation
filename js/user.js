@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	activeNav(2); //加载并激活底部菜单 0：充电桩 1：扫一扫 2：个人中心
+	//activeNav(2); //加载并激活底部菜单 0：充电桩 1：扫一扫 2：个人中心
 	
 	if($("body").hasClass("charHis-page")) {
 		$(".charge-done").click(function(){

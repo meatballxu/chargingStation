@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-	activeNav(1); //加载并激活底部菜单 0：充电桩 1：扫一扫 2：个人中心
+	//activeNav(1); //加载并激活底部菜单 0：充电桩 1：扫一扫 2：个人中心
 	
 	$("#chooseType").picker({
 	  toolbarTemplate: '<header class="bar bar-nav">\

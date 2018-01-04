@@ -235,6 +235,9 @@
 	background: #D8D8D8;
 }
 .station-detail .banner img {
-	width: 100%;
+	/*width: 100%;*/
 	height: 100%;
 }
+.swiper-container {
+    width: 100%;
+}  

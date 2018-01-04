@@ -10,6 +10,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 		<link rel="stylesheet" href="../js/sui/sm.css">
+		<link rel="stylesheet" href="../js/sui/sm-extend.min.css">
 		<link rel="stylesheet" href="../css/common.css">
 		<link rel="stylesheet" href="../css/charging.css">
 
@@ -21,15 +22,15 @@
 			<div class="page">
 				<div class="content">
 				  <div class="buttons-tab">
-				    <a href="#tab1" class="tab-link active button">充电桩</a>
-				    <a href="#tab2" class="tab-link button">电站详情</a>
+				    <a id="tab-link-1" href="#tab1" class="tab-link  button">充电桩</a>
+				    <a id="tab-link-2" href="#tab2" class="tab-link active button">电站详情</a>
 				  </div>
 				  <div class="content-block mt20 mb0 pl0 pr0">
 				    <div class="tabs">
 				      <!--
                       	充电桩
-                      -->
-				      <div id="tab1" class="tab charging-list active">
+                     -->
+				      <div id="tab1" class="tab charging-list ">
 				         <div class="list-block media-list mtb0">
 						    <ul>
 						      <li>
@@ -98,14 +99,23 @@
 				      <!--
                       	电站详情
                       -->
-				      <div id="tab2" class="tab">
+				      <div id="tab2" class="tab active">
 				        <div class="list-block mtb0">
 							<ul>
 								<li class="banner">
 									<!--
                                     	上传图片要求：宽高比 = 5：3
                                     -->
-									<img src="../images/ep/banner.jpg" />
+									<!--<img src="../images/ep/banner.jpg" />-->
+									
+					        	        <!-- Slider -->
+								    <div id="stationImgs" class="swiper-container" data-space-between='0'>
+									    <div class="swiper-wrapper">
+									        <div class="swiper-slide"><img src="../images/ep/banner.jpg" alt=""></div>
+										    <div class="swiper-slide"><img src="../images/ep/banner2.jpg" alt=""></div>
+										    <div class="swiper-slide"><img src="../images/ep/banner3.jpg" alt=""></div>
+									    </div>
+									</div>
 								</li>
 								<li class="item-content">
 									<div class="item-inner">
@@ -201,6 +211,7 @@
 		</div>
 		<script type='text/javascript' src='../js/sui/zepto.js' charset='utf-8'></script>
 		<script type='text/javascript' src='../js/sui/sm.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/sui/sm-extend.min.js' charset='utf-8'></script>
 		<script type='text/javascript' src='../js/common.js' charset='utf-8'></script>
 		<script type='text/javascript' src='../js/charging.js' charset='utf-8'></script>
 		
