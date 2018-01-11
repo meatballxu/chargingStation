@@ -97,14 +97,32 @@
 .stations-page .searchbar.border-bottom:after {
 	background-color: #C7C7C7;
 }
-.station-list {
+.stations-page .station-list {
 	margin-top: 4.3rem;
 }
-.station-list > ul:before {
+.stations-page .station-list > ul:before {
     content: none;
 }
-.station-list > ul + ul {
+.stations-page .station-list > ul + ul {
 	margin-top: 0.5rem;
+}
+.stations-page .station-list .ml0.row> .col-60 {
+	width: 63%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+	white-space: nowrap;
+}
+@media only screen and (max-width: 320px) {
+	.stations-page .station-list .col-40,
+	.stations-page .station-list .col-60 {
+		font-size: 0.6rem;
+	}
+	.stations-page .station-list .ml0.row> .col-40 {
+		width: 30%;
+	}
+	.stations-page .station-list .ml0.row> .col-60 {
+		width: 69%;
+	}
 }
 .filterbar {
     margin: 0 -0.5rem;
@@ -174,6 +192,14 @@
 	font-size: 0.65rem;
     line-height: 1.35rem;
     height: 1.4rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+	white-space: nowrap;
+}
+@media only screen and (max-width: 320px) {
+	.filterbar .options a{
+		font-size: 0.6rem;
+	}
 }
 .filterbar .options a:active,
 .filterbar .options a.active,
@@ -241,3 +267,18 @@
 .swiper-container {
     width: 100%;
 }  
+.row.ml0.W100pc.ptb30 .col-80{
+	width: 70%;
+}
+.row.ml0.W100pc.ptb30 .col-20{
+	width: 30%;
+}
+@media only screen and (max-width: 320px) {
+	.row.ml0.W100pc.ptb30 .col-80{
+		width: 65%;
+	}
+	.row.ml0.W100pc.ptb30 .col-20{
+		width: 35%;
+		font-size: 0.6rem;
+	}
+}
