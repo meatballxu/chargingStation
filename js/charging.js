@@ -48,6 +48,19 @@ $(document).ready(function(){
 			autoplayDisableOnInteraction : false,
 		});
 	}
+	/**搜索页面 0117**/
+	if($("body").hasClass("search-page")) {
+		$('#search').bind('input propertychange', function() {  
+		   if($('#search').val().trim()) {
+		   	$(".clearKey").show();
+		   	showSearchTips();
+		   }else {
+		   	clearSearchTips()
+		   }
+		});
+		$(".clearKey").click(clearSearchTips);
+	}
+	/**搜索页面 0117**/
 });
 
 $("#icon_location").click(function(){//点击浮动位置图标 打开右边栏
@@ -66,4 +79,9 @@ function showMapDetail(){
 }
 function showSearchTips(){
 	$(".search-tag-box").removeClass("hidden");
+}
+function clearSearchTips(){
+	$(".clearKey").hide();
+	$('#search').val("");
+	$(".search-tag-box").addClass("hidden");
 }
