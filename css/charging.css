@@ -123,7 +123,8 @@
 .stations-page .station-list > ul + ul {
 	margin-top: 0.5rem;
 }
-.stations-page .station-list .ml0.row> .col-60 {
+.stations-page .station-list .ml0.row> .col-60,
+.map-detail .ml0.row> .col-60 {
 	width: 63%;
     overflow: hidden;
     text-overflow:ellipsis;
@@ -225,17 +226,36 @@
 	color: #E97E06;
 }
 /**详情页**/
-.charging-list span.badge {
+.charging-list span.badge,
+.charging-list .item-inner .button-small {
     position: absolute;
-    right: 1.2rem;
-    top: 1.5rem;
 	display: inline-block;
-	width: 2.2rem;
 	border-radius: 0.2rem;
-	font-size: 0.6rem;
     padding: 0.2rem 0;
     text-align: center;
 }
+.charging-list span.badge {
+    top: 1.5rem;
+	width: 2.2rem;
+    right: 1.2rem;
+	font-size: 0.6rem;
+}
+.charging-list .free span.badge {
+    top: .8rem;
+}
+.charging-list .item-inner .button-small {
+    display: none;
+}
+.charging-list .free .item-inner .button-small {
+    top: 2rem;
+	width: 3.2rem;
+    right: .7rem;
+    line-height: 1.5;
+	font-size: 0.66rem;
+    height: 1.4rem;
+    display: inline-block;
+}
+
 .charging-list .list-block .item-inner{
     padding-right: 3.5rem;
 }

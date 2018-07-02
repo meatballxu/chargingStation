@@ -33,6 +33,11 @@ $(document).ready(function(){
 			timming(60);
 		}
 	});
+	
+	$(".stars a").click(function(){
+		var i = $(this).index()+1;
+		$(this).closest(".stars").removeClass().addClass("stars stars"+i);
+	});
 });
 //倒计时
 var tt_timming;

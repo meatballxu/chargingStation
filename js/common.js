@@ -25,6 +25,7 @@ function activeNav(num) {
 		$(".page > nav.bar-tab a").removeClass("active");
 	}
 	$("nav.bar-tab > a").eq(num).addClass("active");
+	
 }
 /** footer navigation - end **/
 

@@ -14,4 +14,11 @@ $(document).ready(function(){
 	    }
 	  ]
 	});
+	$(".slideLayer .close").click(function(){
+		$(".slideLayer").hide();
+	});
+	$(".stars a").click(function(){
+		var i = $(this).index()+1;
+		$(this).closest(".stars").removeClass().addClass("stars stars"+i);
+	});
 });
