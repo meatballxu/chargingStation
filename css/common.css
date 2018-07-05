@@ -419,6 +419,10 @@ b[class^="text"] {
 	background: #37BE44!important;
 	border-color: #37BE44!important;
 }
+.button-yellow {
+	background: #F2C500!important;
+	border-color: #F2C500!important;
+}
 .item-media .iconfont {
 	font-size: 1.25rem;
 }
